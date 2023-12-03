@@ -1,0 +1,102 @@
+body{
+     background-color:  hsl(30, 38%, 92%)
+}
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width:600px;
+    height: auto;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px
+}
+.container img{
+    width: 650px;
+    height:450px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.product-description{
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+}
+.product-description .card-name{
+    text-transform: uppercase;
+    color: rgb(96, 94, 94);
+}
+.product-description p{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2rem;
+    color: rgb(96, 94, 94);
+}
+.product-description h1{
+    font-family: 'Fraunces', serif;
+}
+.product-price{
+    display: flex;
+}
+.product-price .recent-price{
+    color: hsl(165, 81%, 25%);
+    font-size: 28px;
+    font-family: 'Fraunces', serif;
+}
+.product-price .pre-price{
+    padding-left: 20px;
+    padding-top: 30px;
+    color: rgb(96, 94, 94);
+}
+.icon-btn{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.icon-btn:hover{
+    cursor: pointer;
+    background-color: hsl(158, 45%, 17%);;
+}
+.icon-btn img{
+    width: 20px;
+    height: 20px;
+}
+.icon-btn span{
+    padding-left: 10px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* responsive for mobile screen */
+
+@media screen and (max-width: 325px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width:300px;
+    height: auto;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  .container img{
+    width: 300px;
+    height:200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.icon-btn img{
+    width: 20px;
+    height: 20px;
+}
+.icon-btn{
+    margin-bottom: 15px;
+}
+}
